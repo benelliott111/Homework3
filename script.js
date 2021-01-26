@@ -9,15 +9,6 @@ var uppercaseLetter = false
 var lowercaseLetter = false
 var specialCharacters = false
 var numbers = false
-// Write password to the #password input
-// function writePassword() {
-//   setParameters();
-//   generatePassword();
-  // var passwordText = document.querySelector("#password");
-
-  // 
-  // console.log(charsLower)
-// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", setParameters);
@@ -33,7 +24,6 @@ function setParameters() {
   }
 
   //Boolean uppercaseLetter
-  
   if (confirm("Would you like uppercase letters in your password?")) {
     uppercaseLetter = true;
   } else {
@@ -42,7 +32,6 @@ function setParameters() {
   console.log(`Uppercase in password = ${uppercaseLetter}`);
 
   //Boolean lowercaseLetter
-  ;
   if (confirm("Would you like lowercase letters in your password?")) {
     lowercaseLetter = true;
   } else {
@@ -51,7 +40,6 @@ function setParameters() {
   console.log(`Lowercase in password = ${lowercaseLetter}`)
   
   //Boolean specialcharacters
-  ;
   if (confirm("Would you like special characters in your password?")) {
     specialCharacters = true;
   } else {
@@ -60,7 +48,6 @@ function setParameters() {
   console.log(`Special characters in password = ${specialCharacters}`)
 
   //Boolean numbers
-  ;
   if (confirm("Would you like numbers in your password?")) {
     numbers = true;
   } else {
@@ -70,6 +57,7 @@ function setParameters() {
   generatePassword(length);
   }
 
+  //Generate password
   function generatePassword(length){
     console.log("generatePassword()")
     var passwordLength = length; 
@@ -102,13 +90,6 @@ function setParameters() {
     if (numbers == true){
       chars += charsNumbers;
     };
-
-
-    // if(chars.length === 0)
-    //   return "";
-    
-    // return passwordText[Math.floor(Math.random * chars.length)];
-    
   }
 
 
